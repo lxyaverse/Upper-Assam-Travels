@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ============================================================
+  UPPER ASSAM TRAVELS · Jorhat cab service homepage template (2026)
+
+  HOW TO EDIT BEFORE LAUNCH
+  1. Phone number: find and replace 919999900000 (links) and
+     +91 99999 00000 (visible text) with the real number.
+  2. Fares and rates: every figure marked "from ₹" is a SAMPLE.
+     Update with the driver's real rates (route board, fleet, FAQ).
+  3. Address: replace the [Street / locality] token in the footer
+     and in the JSON-LD schema block near the end of <body>.
+  4. Images: every grey block labelled "IMAGE ·" is a placeholder.
+     A ready-made <img> tag with alt text sits in a comment right
+     below each one. Drop the photo in /images/ and swap.
+  5. Reviews: the three testimonials are SAMPLES. Replace with real
+     customer reviews before launch.
+  6. Stats: figures in [brackets] in the "Why us" strip are tokens.
+  7. Meta: update the canonical URL, og:url and og:image once the
+     domain is live.
+============================================================ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cab Service in Jorhat | 24x7 Taxi &amp; Car Rental | Upper Assam Travels</title>
+<meta name="description" content="Trusted cab service in Jorhat for airport transfers, city rides and Kaziranga, Majuli and Sivasagar trips. Clean cars, verified local drivers, clear fares. Call 24x7.">
+<link rel="canonical" href="https://www.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Upper Assam Travels | Cab Service in Jorhat">
+<meta property="og:description" content="24x7 taxi and car rental in Jorhat. Airport pickups, city rides, Kaziranga, Majuli and Sivasagar trips with verified local drivers and clear fares.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://www.example.com/images/og-cover.jpg">
+<meta name="theme-color" content="#132a1c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============ DESIGN TOKENS ============ */
+:root{
+  --ink:#132a1c;          /* deep tea forest */
+  --pine:#1c3f2c;         /* hero panel green */
+  --leaf:#2f6f4a;         /* mid tea green */
+  --mist:#e9efe4;         /* pale leaf tint */
+  --cream:#faf7ef;        /* warm paper */
+  --paper:#fffdf8;        /* card surface */
+  --muga:#d9a13b;         /* muga silk gold, action colour */
+  --muga-deep:#a97a1f;
+  --clay:#b23a2b;         /* gamosa red, micro accent only */
+  --sage:#cfdcc9;         /* light text on dark */
+  --line:rgba(19,42,28,.15);
+  --line-dark:rgba(250,247,239,.16);
+  --radius:14px;
+  --shadow:0 10px 30px -12px rgba(19,42,28,.25);
+  --font-display:"Bricolage Grotesque",Georgia,serif;
+  --font-body:"Instrument Sans",-apple-system,Segoe UI,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  background:var(--cream);
+  color:var(--ink);
+  font-size:1rem;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:var(--leaf)}
+:focus-visible{outline:3px solid var(--muga);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+/* ============ UTILITIES ============ */
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.section{padding:clamp(3.5rem,8vw,6rem) 0;scroll-margin-top:90px}
+.eyebrow{
+  font-family:var(--font-mono);font-size:.78rem;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--leaf);
+  display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1rem;
+}
+.eyebrow::before{content:"";width:22px;height:3px;background:var(--muga);border-radius:2px}
+h1,h2,h3{font-family:var(--font-display);line-height:1.08;letter-spacing:-.015em}
+h1{font-size:clamp(2.3rem,5.6vw,4.1rem);font-weight:800}
+h2{font-size:clamp(1.75rem,3.6vw,2.6rem);font-weight:800;max-width:24ch}
+h3{font-size:1.25rem;font-weight:700;line-height:1.25}
+.lead{font-size:clamp(1.02rem,1.6vw,1.18rem);max-width:60ch;color:#3b4f42}
+.section-head{margin-bottom:clamp(1.8rem,4vw,3rem)}
+.section-head .lead{margin-top:.9rem}
+.gamosa{height:6px;background:repeating-linear-gradient(90deg,var(--clay) 0 16px,var(--cream) 16px 22px)}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-weight:600;font-size:1rem;text-decoration:none;
+  padding:.9rem 1.5rem;border-radius:999px;min-height:48px;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+  cursor:pointer;touch-action:manipulation;
+}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-gold{background:var(--muga);color:var(--ink);box-shadow:0 8px 22px -8px rgba(217,161,59,.7)}
+.btn-gold:hover{background:#e3ad4b}
+.btn-ghost-dark{border:2px solid var(--line-dark);color:#fff;background:transparent}
+.btn-ghost-dark:hover{border-color:var(--muga);color:var(--muga)}
+.btn-ghost{border:2px solid var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--cream)}
+.btn-wa{background:#1faa53;color:#fff}
+.btn-wa:hover{background:#1c9a4b}
+
+/* ============ NAV ============ */
+.nav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(250,247,239,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink)}
+.brand-badge{
+  width:42px;height:42px;border-radius:12px;background:var(--pine);
+  display:grid;place-items:center;flex:none;
+}
+.brand-badge svg{width:22px;height:22px;color:var(--muga)}
+.brand-name{font-family:var(--font-display);font-weight:800;font-size:1.12rem;line-height:1.1}
+.brand-sub{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--leaf)}
+.nav-links{display:flex;align-items:center;gap:1.6rem;list-style:none}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+.nav-links a:hover{color:var(--leaf)}
+.nav-call{display:inline-flex}
+.nav-toggle{
+  display:none;background:none;border:1px solid var(--line);border-radius:10px;
+  width:46px;height:46px;place-items:center;color:var(--ink);cursor:pointer;
+}
+.nav-toggle svg{width:22px;height:22px}
+@media (max-width:900px){
+  .nav-links{
+    position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;
+    background:var(--paper);border-bottom:1px solid var(--line);
+    padding:1rem 20px 1.4rem;gap:.2rem;display:none;box-shadow:var(--shadow);
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:.8rem .4rem;border-radius:8px}
+  .nav-links a:hover{background:var(--mist)}
+  .nav-call{display:none}
+  .nav-toggle{display:grid}
+}
+
+/* ============ HERO ============ */
+.hero{background:var(--pine);color:#fff;position:relative;overflow:hidden}
+.hero::after{ /* faint contour texture */
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background:
+    radial-gradient(60rem 30rem at 110% -10%,rgba(217,161,59,.14),transparent 60%),
+    radial-gradient(40rem 24rem at -10% 110%,rgba(47,111,74,.5),transparent 60%);
+}
+.hero-grid{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4rem);
+  align-items:center;padding:clamp(3.5rem,8vw,6.5rem) 0;
+}
+.hero .eyebrow{color:var(--muga)}
+.hero .eyebrow::before{background:var(--clay)}
+.hero h1{color:#fff}
+.hero h1 em{font-style:normal;color:var(--muga)}
+.hero p{color:var(--sage);margin:1.2rem 0 1.8rem;max-width:56ch;font-size:clamp(1.02rem,1.6vw,1.15rem)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem}
+.hero-chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}
+.chip{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-family:var(--font-mono);font-size:.74rem;letter-spacing:.04em;
+  color:var(--sage);border:1px solid var(--line-dark);border-radius:999px;
+  padding:.45rem .85rem;background:rgba(255,255,255,.04);
+}
+.chip svg{width:14px;height:14px;color:var(--muga);flex:none}
+.hero-media{position:relative}
+.hero-note{
+  position:absolute;left:-14px;bottom:22px;background:var(--paper);color:var(--ink);
+  border-radius:12px;box-shadow:var(--shadow);padding:.7rem 1rem;
+  display:flex;align-items:center;gap:.7rem;max-width:88%;
+}
+.hero-note .pulse{width:10px;height:10px;border-radius:50%;background:var(--clay);flex:none;animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(178,58,43,.5)}70%{box-shadow:0 0 0 9px rgba(178,58,43,0)}100%{box-shadow:0 0 0 0 rgba(178,58,43,0)}}
+.hero-note strong{display:block;font-size:.9rem;line-height:1.25}
+.hero-note span{font-size:.78rem;color:#5a6c5f}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;padding-bottom:4.5rem}
+  .hero-note{left:10px;bottom:-18px}
+}
+
+/* ============ IMAGE PLACEHOLDER ============ */
+.ph{
+  position:relative;width:100%;border-radius:var(--radius);overflow:hidden;
+  background:
+    repeating-linear-gradient(-45deg,rgba(19,42,28,.05) 0 14px,transparent 14px 28px),
+    var(--mist);
+  border:2px dashed rgba(19,42,28,.28);
+  display:grid;place-items:center;
+}
+.ph-inner{display:grid;place-items:center;gap:.7rem;padding:1.4rem;text-align:center}
+.ph-inner svg{width:40px;height:40px;color:rgba(19,42,28,.4)}
+.ph-tag{
+  font-family:var(--font-mono);font-size:.72rem;font-weight:600;letter-spacing:.06em;
+  color:var(--ink);background:var(--paper);border:1px solid var(--line);
+  padding:.35rem .7rem;border-radius:999px;max-width:100%;
+}
+
+/* ============ HOW IT WORKS ============ */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.step{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.6rem;position:relative;
+}
+.step-k{
+  font-family:var(--font-mono);font-size:.74rem;font-weight:600;letter-spacing:.1em;
+  color:var(--muga-deep);text-transform:uppercase;display:block;margin-bottom:.7rem;
+}
+.step p{color:#3b4f42;font-size:.96rem;margin-top:.4rem}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+
+/* ============ SERVICES ============ */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.svc{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.7rem;transition:transform .2s ease,box-shadow .2s ease;
+}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.svc-ic{
+  width:48px;height:48px;border-radius:12px;background:var(--mist);
+  display:grid;place-items:center;margin-bottom:1.1rem;
+}
+.svc-ic svg{width:24px;height:24px;color:var(--leaf)}
+.svc p{color:#3b4f42;font-size:.96rem;margin-top:.5rem}
+@media (max-width:1000px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.svc-grid{grid-template-columns:1fr}}
+
+/* ============ ROUTE BOARD (signature) ============ */
+.board-section{background:var(--ink);color:#fff}
+.board-section .eyebrow{color:var(--muga)}
+.board-section h2{color:#fff}
+.board-section .lead{color:var(--sage)}
+.board{
+  border:1px solid var(--line-dark);border-radius:var(--radius);overflow:hidden;
+  background:rgba(255,255,255,.03);
+}
+.board-head,.route{
+  display:grid;grid-template-columns:2.4fr .8fr .9fr 1fr .9fr;
+  gap:1rem;align-items:center;padding:1rem 1.4rem;
+}
+.board-head{
+  font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(207,220,201,.75);border-bottom:1px solid var(--line-dark);
+  background:rgba(255,255,255,.03);
+}
+.route{border-bottom:1px solid var(--line-dark);text-decoration:none;color:#fff;transition:background .15s ease}
+.route:last-child{border-bottom:none}
+.route:hover{background:rgba(217,161,59,.08)}
+.route-name{display:flex;align-items:center;gap:.8rem;min-width:0}
+.route-name svg{width:16px;height:16px;color:var(--muga);flex:none}
+.route-name strong{font-weight:600;font-size:1rem}
+.route-name small{display:block;font-size:.78rem;color:rgba(207,220,201,.8);font-weight:400}
+.route .m{font-family:var(--font-mono);font-size:.88rem;color:var(--sage)}
+.route .fare{font-family:var(--font-mono);font-weight:600;color:var(--muga);font-size:.95rem}
+.route .go{
+  justify-self:end;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;
+  border:1px solid var(--muga);color:var(--muga);border-radius:999px;padding:.4rem .9rem;
+  text-transform:uppercase;white-space:nowrap;
+}
+.route:hover .go{background:var(--muga);color:var(--ink)}
+.board-note{font-size:.85rem;color:rgba(207,220,201,.8);margin-top:1.1rem;max-width:72ch}
+@media (max-width:860px){
+  .board-head{display:none}
+  .route{grid-template-columns:1fr auto;grid-template-areas:"name go" "meta go";row-gap:.35rem;padding:1rem 1.1rem}
+  .route-name{grid-area:name}
+  .route-meta{grid-area:meta;display:flex;flex-wrap:wrap;gap:.4rem .9rem}
+  .route .go{grid-area:go;align-self:center}
+}
+@media (min-width:861px){.route-meta{display:contents}}
+
+/* ============ DESTINATIONS ============ */
+.dest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.dest{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.dest .ph{border-radius:0;border:none;border-bottom:2px dashed rgba(19,42,28,.28)}
+.dest-body{padding:1.3rem 1.3rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.dest-body p{color:#3b4f42;font-size:.93rem;flex:1}
+.dest-meta{font-family:var(--font-mono);font-size:.74rem;color:var(--muga-deep);letter-spacing:.05em}
+@media (max-width:1000px){.dest-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.dest-grid{grid-template-columns:1fr}}
+
+/* ============ FLEET ============ */
+.fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;align-items:stretch}
+.car{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;position:relative;
+}
+.car.popular{border:2px solid var(--muga)}
+.car-flag{
+  position:absolute;top:14px;right:14px;z-index:2;
+  font-family:var(--font-mono);font-size:.68rem;font-weight:600;letter-spacing:.1em;
+  background:var(--muga);color:var(--ink);border-radius:999px;padding:.35rem .8rem;text-transform:uppercase;
+}
+.car .ph{border-radius:0;border:none;border-bottom:2px dashed rgba(19,42,28,.28)}
+.car-body{padding:1.4rem;display:flex;flex-direction:column;gap:1rem;flex:1}
+.car-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.car-top small{font-size:.83rem;color:#5a6c5f;display:block;font-weight:400}
+.car-rate{font-family:var(--font-mono);font-size:.85rem;color:var(--muga-deep);font-weight:600;white-space:nowrap}
+.car ul{list-style:none;display:grid;gap:.45rem;flex:1}
+.car li{display:flex;gap:.55rem;align-items:flex-start;font-size:.93rem;color:#3b4f42}
+.car li svg{width:16px;height:16px;color:var(--leaf);flex:none;margin-top:3px}
+@media (max-width:960px){.fleet-grid{grid-template-columns:1fr}}
+
+/* ============ WHY US ============ */
+.why{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.why-list{display:grid;gap:1.1rem;margin-top:1.6rem}
+.why-item{display:flex;gap:1rem;align-items:flex-start}
+.why-item .svc-ic{margin:0;flex:none}
+.why-item p{color:#3b4f42;font-size:.95rem;margin-top:.15rem}
+.stats{
+  margin-top:2.2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;
+  border-top:1px solid var(--line);padding-top:1.6rem;
+}
+.stat b{font-family:var(--font-display);font-size:1.5rem;font-weight:800;display:block}
+.stat span{font-size:.82rem;color:#5a6c5f}
+@media (max-width:900px){.why{grid-template-columns:1fr}}
+@media (max-width:560px){.stats{grid-template-columns:1fr;gap:1.2rem}}
+
+/* ============ TESTIMONIALS ============ */
+.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.quote{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.6rem;display:flex;flex-direction:column;gap:1rem;
+}
+.stars{display:flex;gap:.15rem}
+.stars svg{width:16px;height:16px;color:var(--muga)}
+.quote p{color:#3b4f42;font-size:.95rem;flex:1}
+.quote cite{font-style:normal;font-weight:600;font-size:.9rem}
+.quote cite span{display:block;font-weight:400;font-size:.78rem;color:#5a6c5f}
+@media (max-width:900px){.quote-grid{grid-template-columns:1fr}}
+
+/* ============ FAQ ============ */
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:1.4rem;
+  align-items:center;padding:1.25rem 0;font-weight:600;font-size:1.04rem;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .plus{
+  flex:none;width:30px;height:30px;border:1px solid var(--line);border-radius:50%;
+  display:grid;place-items:center;transition:transform .2s ease;color:var(--leaf);
+}
+.faq summary .plus svg{width:14px;height:14px}
+.faq details[open] summary .plus{transform:rotate(45deg);background:var(--mist)}
+.faq details p{padding:0 0 1.3rem;color:#3b4f42;max-width:65ch}
+
+/* ============ AREAS ============ */
+.areas{display:flex;flex-wrap:wrap;gap:.6rem}
+.area{
+  font-family:var(--font-mono);font-size:.8rem;color:var(--ink);
+  border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:.5rem 1rem;
+}
+
+/* ============ FINAL CTA ============ */
+.cta-panel{
+  background:var(--pine);color:#fff;border-radius:calc(var(--radius) + 6px);
+  padding:clamp(2.4rem,6vw,4rem);text-align:center;position:relative;overflow:hidden;
+}
+.cta-panel::after{content:"";position:absolute;inset:0;background:radial-gradient(46rem 20rem at 50% 130%,rgba(217,161,59,.2),transparent 65%);pointer-events:none}
+.cta-panel h2{color:#fff;margin:0 auto .8rem}
+.cta-panel p{color:var(--sage);max-width:52ch;margin:0 auto 1.8rem}
+.cta-panel .hero-ctas{justify-content:center;position:relative;z-index:1}
+
+/* ============ FOOTER ============ */
+footer{background:var(--ink);color:var(--sage);margin-top:clamp(3.5rem,8vw,6rem)}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.4rem;padding:clamp(3rem,6vw,4.5rem) 0 2.5rem}
+.foot h4{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muga);margin-bottom:1rem;font-weight:600}
+.foot ul{list-style:none;display:grid;gap:.55rem}
+.foot a{color:var(--sage);text-decoration:none;font-size:.92rem}
+.foot a:hover{color:#fff}
+.foot p{font-size:.92rem}
+.foot .brand{color:#fff;margin-bottom:1rem}
+.foot .brand-sub{color:var(--muga)}
+.foot-bottom{border-top:1px solid var(--line-dark);padding:1.4rem 0 6.5rem;font-size:.8rem;color:rgba(207,220,201,.7)}
+@media (min-width:901px){.foot-bottom{padding-bottom:1.4rem}}
+@media (max-width:960px){.foot{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.foot{grid-template-columns:1fr}}
+
+/* ============ MOBILE ACTION BAR ============ */
+.action-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
+  grid-template-columns:1fr 1fr;gap:1px;background:var(--line);
+  padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -8px 24px rgba(19,42,28,.18);
+}
+.action-bar a{
+  display:flex;align-items:center;justify-content:center;gap:.55rem;
+  padding:1rem;font-weight:600;text-decoration:none;font-size:1rem;min-height:56px;
+}
+.action-bar a svg{width:20px;height:20px}
+.action-call{background:var(--muga);color:var(--ink)}
+.action-wa{background:#1faa53;color:#fff}
+@media (max-width:900px){.action-bar{display:grid}}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+.skip{
+  position:absolute;left:-9999px;top:0;background:var(--muga);color:var(--ink);
+  padding:.7rem 1.2rem;border-radius:0 0 10px 0;font-weight:600;z-index:100;
+}
+.skip:focus{left:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="gamosa" aria-hidden="true"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Upper Assam Travels, back to top">
+      <span class="brand-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h-2v-5l2-6h12l2 6v5h-2"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/><path d="M5 12h14"/></svg>
+      </span>
+      <span>
+        <span class="brand-name">Upper Assam Travels</span><br>
+        <span class="brand-sub">Jorhat cab service</span>
+      </span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#fares">Routes &amp; fares</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-gold nav-call" href="tel:+919999900000">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.25a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+      Call now
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Jorhat · Upper Assam · 24x7</p>
+      <h1>A reliable cab service in Jorhat, from airport pickups to <em>Kaziranga</em> trips</h1>
+      <p>Upper Assam Travels runs clean, air conditioned taxis with verified local drivers. Your fare is agreed before pickup, so there are no surprises at the drop point. Call or WhatsApp, and your cab is on its way.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="tel:+919999900000">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.25a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          Call +91 99999 00000
+        </a>
+        <a class="btn btn-ghost-dark" href="https://wa.me/919999900000?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20in%20Jorhat" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.25-.13-1.5-.74-1.7-.82-.23-.09-.4-.13-.56.12-.17.25-.65.82-.8 1-.15.16-.3.19-.55.06a6.7 6.7 0 0 1-3.35-2.93c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.3-.23.25-.87.85-.87 2.07s.9 2.4 1.02 2.57c.13.16 1.76 2.68 4.25 3.76.6.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.5-.61 1.7-1.2.22-.6.22-1.1.16-1.2-.07-.11-.23-.17-.48-.3Z"/></svg>
+          WhatsApp us
+        </a>
+      </div>
+      <ul class="hero-chips" role="list">
+        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24x7 service</li>
+        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>Verified local drivers</li>
+        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 7H7L6 3Z"/><path d="M7 10 5 21h14l-2-11"/></svg>Fares fixed upfront</li>
+        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></svg>Airport &amp; railway pickup</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <div class="ph" style="aspect-ratio:4/5">
+        <div class="ph-inner">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L6 23"/></svg>
+          <span class="ph-tag">IMAGE · Your car with driver, outside a Jorhat landmark · 960x1200</span>
+        </div>
+      </div>
+      <!-- Replace the block above with:
+      <img src="images/hero-driver-car.jpg" alt="Upper Assam Travels driver standing beside a clean white cab in Jorhat" width="960" height="1200">
+      -->
+      <div class="hero-note">
+        <span class="pulse" aria-hidden="true"></span>
+        <span><strong>Cabs on standby now</strong><span>Jorhat town, Rowriah Airport and Mariani Junction</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Cab booking in Jorhat</p>
+      <h2 id="how-h">Book a cab in three simple steps</h2>
+      <p class="lead">No app to download, no account to create. Most bookings are confirmed within minutes.</p>
+    </div>
+    <div class="steps">
+      <article class="step reveal">
+        <span class="step-k">Step 1 · Reach out</span>
+        <h3>Call or WhatsApp us</h3>
+        <p>Tell us your pickup point, drop point and time. For airport and train pickups, share your flight or train number so we can plan around it.</p>
+      </article>
+      <article class="step reveal">
+        <span class="step-k">Step 2 · Fix the fare</span>
+        <h3>Get a clear quote</h3>
+        <p>We confirm the vehicle and the full fare on the spot. What we quote is what you pay, including standard tolls and parking where stated.</p>
+      </article>
+      <article class="step reveal">
+        <span class="step-k">Step 3 · Ride</span>
+        <h3>Your driver arrives</h3>
+        <p>A clean, fueled car reaches you on time. You get the driver's name and number as soon as the booking is confirmed.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section" id="services" aria-labelledby="svc-h" style="background:var(--mist)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">What we do</p>
+      <h2 id="svc-h">Taxi services in Jorhat for every kind of trip</h2>
+      <p class="lead">One number for local rides, transfers and long journeys across Upper Assam and the Northeast.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></svg></span>
+        <h3>Jorhat Airport taxi</h3>
+        <p>On time pickups and drops at Rowriah Airport (JRH), about 15 minutes from Jorhat town. We track your arrival time and wait at the gate.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.5"/><path d="M4 15.5h16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2Z"/><path d="m8 19.5-2 2.5M16 19.5l2 2.5"/><path d="M4 10h16"/><circle cx="8.5" cy="13" r="1"/><circle cx="15.5" cy="13" r="1"/></svg></span>
+        <h3>Railway station pickup</h3>
+        <p>Transfers from Mariani Junction and Jorhat Town station at any hour, matched to your train so a delay never leaves you stranded.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <h3>Local city rides</h3>
+        <p>Point to point trips and hourly rentals within Jorhat: markets, hospitals, offices, colleges and the tea estates around town.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h-2v-5l2-6h12l2 6v5h-2"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/><path d="M5 12h14"/></svg></span>
+        <h3>Outstation cabs, one way and round trip</h3>
+        <p>One way drops and round trips across Assam and the Northeast. On a one way drop, you pay only for the route you use.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3Z"/></svg></span>
+        <h3>Tour packages</h3>
+        <p>Kaziranga safaris, Majuli ferry days and Sivasagar heritage circuits, planned end to end with a driver who knows the region.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+        <h3>Corporate and monthly duty</h3>
+        <p>Fixed monthly billing for businesses, tea estates and project teams in and around Jorhat, with a dedicated car and driver.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ROUTE BOARD (signature section) ================= -->
+<section class="section board-section" id="fares" aria-labelledby="fares-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Routes and fares</p>
+      <h2 id="fares-h">Jorhat taxi fares for popular routes</h2>
+      <p class="lead">Kaziranga National Park is about 97 km from Jorhat by road and takes around 2.5 hours via NH 715. Here are our most booked routes with distance, travel time and starting fares.</p>
+    </div>
+    <!-- SAMPLE FARES: replace every "from ₹" figure with real rates -->
+    <div class="board reveal">
+      <div class="board-head" aria-hidden="true">
+        <span>Route</span><span>Distance</span><span>Time</span><span>Fare</span><span></span>
+      </div>
+      <a class="route" href="https://wa.me/919999900000?text=Cab%20quote%3A%20Jorhat%20to%20Kaziranga" target="_blank" rel="noopener">
+        <span class="route-name">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <span><strong>Jorhat to Kaziranga</strong><small>Kohora gate, NH 715</small></span>
+        </span>
+        <span class="route-meta"><span class="m">~97 km</span><span class="m">~2.5 hrs</span><span class="fare">from ₹2,800</span></span>
+        <span class="go">Book</span>
+      </a>
+      <a class="route" href="https://wa.me/919999900000?text=Cab%20quote%3A%20Jorhat%20to%20Nimati%20Ghat" target="_blank" rel="noopener">
+        <span class="route-name">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <span><strong>Jorhat to Nimati Ghat</strong><small>Ferry point for Majuli</small></span>
+        </span>
+        <span class="route-meta"><span class="m">~14 km</span><span class="m">~30 min</span><span class="fare">from ₹600</span></span>
+        <span class="go">Book</span>
+      </a>
+      <a class="route" href="https://wa.me/919999900000?text=Cab%20quote%3A%20Jorhat%20Airport%20pickup" target="_blank" rel="noopener">
+        <span class="route-name">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <span><strong>Jorhat Airport to city</strong><small>Rowriah (JRH), any hour</small></span>
+        </span>
+        <span class="route-meta"><span class="m">~7 km</span><span class="m">~15 min</span><span class="fare">from ₹400</span></span>
+        <span class="go">Book</span>
+      </a>
+      <a class="route" href="https://wa.me/919999900000?text=Cab%20quote%3A%20Mariani%20Junction%20to%20Jorhat" target="_blank" rel="noopener">
+        <span class="route-name">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <span><strong>Mariani Junction to Jorhat</strong><small>Train arrivals tracked</small></span>
+        </span>
+        <span class="route-meta"><span class="m">~18 km</span><span class="m">~40 min</span><span class="fare">from ₹700</span></span>
+        <span class="go">Book</span>
+      </a>
+      <a class="route" href="https://wa.me/919999900000?text=Cab%20quote%3A%20Jorhat%20to%20Sivasagar" target="_blank" rel="noopener">
+        <span class="route-name">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <span><strong>Jorhat to Sivasagar</strong><small>Ahom heritage day trip</small></span>
+        </span>
+        <span class="route-meta"><span class="m">~58 km</span><span class="m">~1.5 hrs</span><span class="fare">from ₹1,800</span></span>
+        <span class="go">Book</span>
+      </a>
+      <a class="route" href="https://wa.me/919999900000?text=Cab%20quote%3A%20Jorhat%20to%20Dibrugarh" target="_blank" rel="noopener">
+        <span class="route-name">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <span><strong>Jorhat to Dibrugarh</strong><small>Via Moran, NH 2</small></span>
+        </span>
+        <span class="route-meta"><span class="m">~135 km</span><span class="m">~3 hrs</span><span class="fare">from ₹3,500</span></span>
+        <span class="go">Book</span>
+      </a>
+      <a class="route" href="https://wa.me/919999900000?text=Cab%20quote%3A%20Jorhat%20to%20Guwahati" target="_blank" rel="noopener">
+        <span class="route-name">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <span><strong>Jorhat to Guwahati</strong><small>One way drop available</small></span>
+        </span>
+        <span class="route-meta"><span class="m">~305 km</span><span class="m">~6.5 hrs</span><span class="fare">from ₹7,500</span></span>
+        <span class="go">Book</span>
+      </a>
+    </div>
+    <p class="board-note reveal">Starting fares shown are for a sedan, one way. The final fare depends on vehicle, route and season, and is always confirmed before pickup. For any other route, WhatsApp your pickup and drop points for an instant quote.</p>
+  </div>
+</section>
+
+<!-- ================= DESTINATIONS ================= -->
+<section class="section" id="destinations" aria-labelledby="dest-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Where travellers go</p>
+      <h2 id="dest-h">Day trips and tours from Jorhat</h2>
+      <p class="lead">Jorhat sits at the centre of Upper Assam's best travel circuit. These are the trips our riders book most.</p>
+    </div>
+    <div class="dest-grid">
+      <article class="dest reveal">
+        <div class="ph" style="aspect-ratio:4/3">
+          <div class="ph-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L6 23"/></svg>
+            <span class="ph-tag">IMAGE · Rhino at Kaziranga · 800x600</span>
+          </div>
+        </div>
+        <!-- <img src="images/kaziranga.jpg" alt="One horned rhino grazing at Kaziranga National Park near Jorhat" loading="lazy" width="800" height="600"> -->
+        <div class="dest-body">
+          <span class="dest-meta">~97 KM · WILDLIFE</span>
+          <h3>Kaziranga National Park</h3>
+          <p>Home of the one horned rhino. We handle early morning safari timings and park transfers so you reach the Kohora gate fresh.</p>
+        </div>
+      </article>
+      <article class="dest reveal">
+        <div class="ph" style="aspect-ratio:4/3">
+          <div class="ph-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L6 23"/></svg>
+            <span class="ph-tag">IMAGE · Majuli ferry on the Brahmaputra · 800x600</span>
+          </div>
+        </div>
+        <!-- <img src="images/majuli.jpg" alt="Ferry crossing the Brahmaputra river from Nimati Ghat to Majuli island" loading="lazy" width="800" height="600"> -->
+        <div class="dest-body">
+          <span class="dest-meta">~14 KM TO FERRY · CULTURE</span>
+          <h3>Majuli Island</h3>
+          <p>The world's largest river island. We drop you at Nimati Ghat in time for the ferry and pick you up when you return.</p>
+        </div>
+      </article>
+      <article class="dest reveal">
+        <div class="ph" style="aspect-ratio:4/3">
+          <div class="ph-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L6 23"/></svg>
+            <span class="ph-tag">IMAGE · Rang Ghar, Sivasagar · 800x600</span>
+          </div>
+        </div>
+        <!-- <img src="images/sivasagar.jpg" alt="Rang Ghar amphitheatre of the Ahom kingdom in Sivasagar" loading="lazy" width="800" height="600"> -->
+        <div class="dest-body">
+          <span class="dest-meta">~58 KM · HERITAGE</span>
+          <h3>Sivasagar</h3>
+          <p>Tanks, temples and palaces of the Ahom era. An easy day trip with time for Rang Ghar, Talatal Ghar and Sivadol.</p>
+        </div>
+      </article>
+      <article class="dest reveal">
+        <div class="ph" style="aspect-ratio:4/3">
+          <div class="ph-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L6 23"/></svg>
+            <span class="ph-tag">IMAGE · Tea garden near Jorhat · 800x600</span>
+          </div>
+        </div>
+        <!-- <img src="images/tea-gardens.jpg" alt="Rows of tea bushes at a heritage tea estate near Jorhat" loading="lazy" width="800" height="600"> -->
+        <div class="dest-body">
+          <span class="dest-meta">AROUND TOWN · TEA</span>
+          <h3>Tea estates of Jorhat</h3>
+          <p>Garden drives, heritage bungalows and the golf club circuit around the tea capital of India, at your own pace.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLEET ================= -->
+<section class="section" id="fleet" aria-labelledby="fleet-h" style="background:var(--mist)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our fleet</p>
+      <h2 id="fleet-h">Car rental in Jorhat, always with a driver</h2>
+      <p class="lead">Every vehicle is air conditioned, cleaned before each trip and driven by a verified driver who knows these roads.</p>
+    </div>
+    <!-- SAMPLE RATES: update the per km figures with real rates -->
+    <div class="fleet-grid">
+      <article class="car reveal">
+        <div class="ph" style="aspect-ratio:16/10">
+          <div class="ph-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L6 23"/></svg>
+            <span class="ph-tag">IMAGE · Your sedan · 800x500</span>
+          </div>
+        </div>
+        <!-- <img src="images/fleet-sedan.jpg" alt="White sedan taxi of Upper Assam Travels parked in Jorhat" loading="lazy" width="800" height="500"> -->
+        <div class="car-body">
+          <div class="car-top">
+            <div><h3>Sedan</h3><small>Dzire, Aura or similar · 4 seats</small></div>
+            <span class="car-rate">from ₹14/km</span>
+          </div>
+          <ul role="list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Best for solo travellers and couples</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Airport runs and city rides</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>2 large bags</li>
+          </ul>
+          <a class="btn btn-ghost" href="https://wa.me/919999900000?text=I%20want%20to%20book%20a%20sedan%20in%20Jorhat" target="_blank" rel="noopener">Book a sedan</a>
+        </div>
+      </article>
+      <article class="car popular reveal">
+        <span class="car-flag">Most booked</span>
+        <div class="ph" style="aspect-ratio:16/10">
+          <div class="ph-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L6 23"/></svg>
+            <span class="ph-tag">IMAGE · Your SUV · 800x500</span>
+          </div>
+        </div>
+        <!-- <img src="images/fleet-suv.jpg" alt="SUV taxi of Upper Assam Travels ready for a Kaziranga trip" loading="lazy" width="800" height="500"> -->
+        <div class="car-body">
+          <div class="car-top">
+            <div><h3>SUV</h3><small>Ertiga, Innova or similar · 6 to 7 seats</small></div>
+            <span class="car-rate">from ₹18/km</span>
+          </div>
+          <ul role="list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Best for families and Kaziranga trips</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Extra legroom for long highway runs</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>4 to 5 large bags</li>
+          </ul>
+          <a class="btn btn-gold" href="https://wa.me/919999900000?text=I%20want%20to%20book%20an%20SUV%20in%20Jorhat" target="_blank" rel="noopener">Book an SUV</a>
+        </div>
+      </article>
+      <article class="car reveal">
+        <div class="ph" style="aspect-ratio:16/10">
+          <div class="ph-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L6 23"/></svg>
+            <span class="ph-tag">IMAGE · Your tempo traveller · 800x500</span>
+          </div>
+        </div>
+        <!-- <img src="images/fleet-tempo.jpg" alt="Tempo traveller of Upper Assam Travels for group tours from Jorhat" loading="lazy" width="800" height="500"> -->
+        <div class="car-body">
+          <div class="car-top">
+            <div><h3>Tempo Traveller</h3><small>Force Traveller · 12 to 17 seats</small></div>
+            <span class="car-rate">from ₹26/km</span>
+          </div>
+          <ul role="list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Group tours, weddings and office trips</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Pushback seats</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>Large luggage space</li>
+          </ul>
+          <a class="btn btn-ghost" href="https://wa.me/919999900000?text=I%20want%20to%20book%20a%20tempo%20traveller%20from%20Jorhat" target="_blank" rel="noopener">Ask about groups</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="section" aria-labelledby="why-h">
+  <div class="wrap why">
+    <div class="reveal">
+      <p class="eyebrow">Why riders stay with us</p>
+      <h2 id="why-h">A local cab company, not a call centre</h2>
+      <div class="why-list">
+        <div class="why-item">
+          <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div>
+            <h3>Drivers who know these roads</h3>
+            <p>Ferry timings at Nimati Ghat, safari slots at Kaziranga, the safest night route on NH 715. Our drivers grew up here.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 7H7L6 3Z"/><path d="M7 10 5 21h14l-2-11"/></svg></span>
+          <div>
+            <h3>Fares agreed before pickup</h3>
+            <p>You know the full fare before the car leaves the stand. No meter games, no surge, no check post surprises.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <div>
+            <h3>On time for flights, trains and ferries</h3>
+            <p>We plan pickups around your flight, train or ferry, with buffer for Jorhat traffic and weather.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <div>
+            <h3>Safe for solo and night travel</h3>
+            <p>Verified drivers, well maintained cars and a number you can call at any hour. Driver details shared before every trip.</p>
+          </div>
+        </div>
+      </div>
+      <!-- EDIT: replace bracketed tokens with real figures -->
+      <div class="stats">
+        <div class="stat"><b>[10]+</b><span>years on Assam's roads</span></div>
+        <div class="stat"><b>[5,000]+</b><span>trips completed</span></div>
+        <div class="stat"><b>24x7</b><span>booking and support</span></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="ph" style="aspect-ratio:4/5">
+        <div class="ph-inner">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L6 23"/></svg>
+          <span class="ph-tag">IMAGE · Owner or drivers with the fleet · 960x1200</span>
+        </div>
+      </div>
+      <!-- <img src="images/team-fleet.jpg" alt="Upper Assam Travels owner and drivers with their cabs in Jorhat" loading="lazy" width="960" height="1200"> -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<!-- SAMPLE REVIEWS: replace all three with real customer reviews before launch -->
+<section class="section" aria-labelledby="rev-h" style="background:var(--mist)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Rider reviews</p>
+      <h2 id="rev-h">What riders say after the trip</h2>
+    </div>
+    <div class="quote-grid">
+      <figure class="quote reveal">
+        <div class="stars" aria-label="Rated 5 out of 5">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+        </div>
+        <p>"Landed at Rowriah at 7 am and the car was already waiting. The fare was exactly what was quoted on WhatsApp the night before."</p>
+        <figcaption><cite>Sample review<span>Replace with a real customer review</span></cite></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <div class="stars" aria-label="Rated 5 out of 5">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+        </div>
+        <p>"Our driver adjusted the whole Kaziranga plan when the morning safari shifted. Knew every stop worth making on NH 715."</p>
+        <figcaption><cite>Sample review<span>Replace with a real customer review</span></cite></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <div class="stars" aria-label="Rated 5 out of 5">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>
+        </div>
+        <p>"I use them for my parents' hospital visits in Jorhat. Same courteous drivers every time, and they wait without fuss."</p>
+        <figcaption><cite>Sample review<span>Replace with a real customer review</span></cite></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Good to know</p>
+      <h2 id="faq-h">Jorhat cab service FAQs</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>How far is Kaziranga from Jorhat?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Kaziranga National Park's Kohora gate is about 97 km from Jorhat, roughly 2.5 hours by taxi on NH 715. We recommend leaving Jorhat by 5 am if you want to make the first morning safari.</p>
+      </details>
+      <details>
+        <summary>What is the taxi fare from Jorhat to Kaziranga?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>A one way sedan drop from Jorhat to Kaziranga starts at about ₹2,800, and an SUV at about ₹3,500. Round trips and waiting time are quoted separately. WhatsApp us your dates for an exact figure.</p>
+      </details>
+      <details>
+        <summary>How do I book a cab in Jorhat?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Call or WhatsApp +91 99999 00000 with your pickup point, drop point and time. We confirm the vehicle and full fare on the spot. There is no app to install and no advance account needed.</p>
+      </details>
+      <details>
+        <summary>Do you provide Jorhat Airport pickup and drop?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Yes. We cover Rowriah Airport (JRH) around the clock. Share your flight number when booking and we adjust the pickup if your flight runs late.</p>
+      </details>
+      <details>
+        <summary>How do I reach Majuli from Jorhat?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Take a cab from Jorhat to Nimati Ghat, about 14 km away, then a ferry across the Brahmaputra to Kamalabari Ghat on Majuli. We time the drop to the ferry schedule and can arrange your return pickup.</p>
+      </details>
+      <details>
+        <summary>Do you offer one way drops?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Yes. On one way outstation drops you pay only for the outbound route, which usually works out cheaper than a round trip fare when you are not coming back the same day.</p>
+      </details>
+      <details>
+        <summary>Is the cab service available at night?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Yes, we operate 24x7, including late night airport and railway pickups. For departures before 6 am, book the previous evening so we can assign a driver in advance.</p>
+      </details>
+      <details>
+        <summary>Can I book a cab for trips outside Assam?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Yes, we run round trips across the Northeast on request, including Nagaland, Meghalaya and Arunachal Pradesh routes. Tell us your itinerary and we will plan the vehicle and halts.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AREAS SERVED ================= -->
+<section class="section" aria-labelledby="area-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Service area</p>
+      <h2 id="area-h">Where we pick up and drop</h2>
+      <p class="lead">Based in Jorhat town, serving the whole district and the routes around it.</p>
+    </div>
+    <div class="areas reveal">
+      <span class="area">Jorhat Town</span>
+      <span class="area">Rowriah</span>
+      <span class="area">Cinnamara</span>
+      <span class="area">Titabar</span>
+      <span class="area">Teok</span>
+      <span class="area">Mariani</span>
+      <span class="area">Dergaon</span>
+      <span class="area">Golaghat</span>
+      <span class="area">Nimati Ghat</span>
+      <span class="area">Majuli (Kamalabari)</span>
+      <span class="area">Sivasagar</span>
+      <span class="area">Kaziranga (Kohora)</span>
+      <span class="area">Bokakhat</span>
+      <span class="area">Moran</span>
+      <span class="area">Dibrugarh</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="section" id="contact" aria-labelledby="cta-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-panel reveal">
+      <p class="eyebrow" style="color:var(--muga)">Ready when you are</p>
+      <h2 id="cta-h">Need a cab in Jorhat right now?</h2>
+      <p>Cabs stand by at Jorhat town, Rowriah Airport and Mariani Junction. One call or message and you get an instant confirmation with your driver's details.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="tel:+919999900000">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.25a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          Call +91 99999 00000
+        </a>
+        <a class="btn btn-wa" href="https://wa.me/919999900000?text=Hi%2C%20I%20need%20a%20cab%20in%20Jorhat" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.25-.13-1.5-.74-1.7-.82-.23-.09-.4-.13-.56.12-.17.25-.65.82-.8 1-.15.16-.3.19-.55.06a6.7 6.7 0 0 1-3.35-2.93c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.3-.23.25-.87.85-.87 2.07s.9 2.4 1.02 2.57c.13.16 1.76 2.68 4.25 3.76.6.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.5-.61 1.7-1.2.22-.6.22-1.1.16-1.2-.07-.11-.23-.17-.48-.3Z"/></svg>
+          WhatsApp booking
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#top">
+        <span class="brand-badge" aria-hidden="true" style="background:rgba(255,255,255,.08)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h-2v-5l2-6h12l2 6v5h-2"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/><path d="M5 12h14"/></svg>
+        </span>
+        <span>
+          <span class="brand-name">Upper Assam Travels</span><br>
+          <span class="brand-sub">Jorhat cab service</span>
+        </span>
+      </a>
+      <p>A driver owned cab service in Jorhat offering 24x7 taxi, car rental and tour trips across Upper Assam, from airport transfers to Kaziranga, Majuli and Sivasagar.</p>
+    </div>
+    <nav aria-label="Services">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Jorhat Airport taxi</a></li>
+        <li><a href="#services">Railway station pickup</a></li>
+        <li><a href="#services">Local taxi in Jorhat</a></li>
+        <li><a href="#services">Outstation cabs</a></li>
+        <li><a href="#fleet">Car rental with driver</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Popular trips">
+      <h4>Popular trips</h4>
+      <ul>
+        <li><a href="#fares">Jorhat to Kaziranga taxi</a></li>
+        <li><a href="#fares">Jorhat to Majuli (Nimati Ghat)</a></li>
+        <li><a href="#fares">Jorhat to Sivasagar</a></li>
+        <li><a href="#fares">Jorhat to Guwahati</a></li>
+        <li><a href="#fares">Jorhat to Dibrugarh</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+919999900000">+91 99999 00000</a></li>
+        <li><a href="https://wa.me/919999900000" target="_blank" rel="noopener">WhatsApp booking</a></li>
+        <li>[Street / locality], Jorhat, Assam 785001</li>
+        <li>Open 24 hours, all days</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <p>© 2026 Upper Assam Travels, Jorhat, Assam. All rights reserved. Fares shown are indicative starting rates and are confirmed before every booking.</p>
+  </div>
+</footer>
+
+<!-- ================= MOBILE ACTION BAR ================= -->
+<div class="action-bar">
+  <a class="action-call" href="tel:+919999900000">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.25a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+    Call now
+  </a>
+  <a class="action-wa" href="https://wa.me/919999900000?text=Hi%2C%20I%20want%20to%20book%20a%20cab%20in%20Jorhat" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.25-.13-1.5-.74-1.7-.82-.23-.09-.4-.13-.56.12-.17.25-.65.82-.8 1-.15.16-.3.19-.55.06a6.7 6.7 0 0 1-3.35-2.93c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.3-.23.25-.87.85-.87 2.07s.9 2.4 1.02 2.57c.13.16 1.76 2.68 4.25 3.76.6.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.5-.61 1.7-1.2.22-.6.22-1.1.16-1.2-.07-.11-.23-.17-.48-.3Z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<!-- ================= SCHEMA (update phone, address, URL, geo before launch) ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.example.com/#business",
+  "name": "Upper Assam Travels",
+  "description": "24x7 cab service in Jorhat, Assam offering airport taxi, railway pickup, local rides, outstation cabs and tour packages to Kaziranga, Majuli and Sivasagar.",
+  "url": "https://www.example.com/",
+  "telephone": "+919999900000",
+  "image": "https://www.example.com/images/og-cover.jpg",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[Street / locality]",
+    "addressLocality": "Jorhat",
+    "addressRegion": "Assam",
+    "postalCode": "785001",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 26.7509, "longitude": 94.2037 },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "areaServed": ["Jorhat","Mariani","Titabar","Teok","Dergaon","Golaghat","Majuli","Sivasagar","Kaziranga","Bokakhat","Dibrugarh","Guwahati"],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jorhat Airport taxi", "serviceType": "Airport transfer" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outstation cab from Jorhat", "serviceType": "Outstation taxi" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Local taxi in Jorhat", "serviceType": "City taxi" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kaziranga, Majuli and Sivasagar tours", "serviceType": "Tour package" } }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How far is Kaziranga from Jorhat?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Kaziranga National Park's Kohora gate is about 97 km from Jorhat, roughly 2.5 hours by taxi on NH 715. Leaving Jorhat by 5 am is recommended for the first morning safari." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the taxi fare from Jorhat to Kaziranga?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A one way sedan drop from Jorhat to Kaziranga starts at about ₹2,800, and an SUV at about ₹3,500. Round trips and waiting time are quoted separately." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book a cab in Jorhat?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Call or WhatsApp Upper Assam Travels with your pickup point, drop point and time. The vehicle and full fare are confirmed on the spot, with no app to install." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide Jorhat Airport pickup and drop?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, Upper Assam Travels covers Rowriah Airport (JRH) around the clock. Share your flight number when booking and the pickup is adjusted if your flight runs late." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I reach Majuli from Jorhat?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Take a cab from Jorhat to Nimati Ghat, about 14 km away, then a ferry across the Brahmaputra to Kamalabari Ghat on Majuli. Drops are timed to the ferry schedule." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the cab service available at night?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, the service runs 24x7, including late night airport and railway pickups. For departures before 6 am, booking the previous evening is recommended." }
+    }
+  ]
+}
+</script>
+
+<script>
+// Mobile menu
+const toggle=document.getElementById('nav-toggle');
+const links=document.getElementById('nav-links');
+toggle.addEventListener('click',()=>{
+  const open=links.classList.toggle('open');
+  toggle.setAttribute('aria-expanded',open?'true':'false');
+  toggle.setAttribute('aria-label',open?'Close menu':'Open menu');
+});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  links.classList.remove('open');
+  toggle.setAttribute('aria-expanded','false');
+}));
+// Scroll reveal (respects reduced motion)
+const prefersReduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const targets=document.querySelectorAll('.reveal');
+if(prefersReduced||!('IntersectionObserver' in window)){
+  targets.forEach(el=>el.classList.add('in'));
+}else{
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12});
+  targets.forEach(el=>io.observe(el));
+}
+</script>
+</body>
+</html>
